@@ -32,10 +32,11 @@ if( !function_exists( 'mediaconsult_service_highlight_rework' ) ) {
 		
 		$output = '';
 		
-      $output .= '<a ' . $mediaconsult_url . ' class="celestial-button-fill celestial-button-skin" >';
+      
 		
-        $output .= '<div class="cel-service-highlight ' .  esc_attr( $class ) . '">';
+      $output .= '<div class="cel-service-highlight ' .  esc_attr( $class ) . '">';
 
+	$output .= '<a ' . $mediaconsult_url . ' class="celestial-button-fill celestial-button-skin" >';
 
           $output .= '<div class="serh-title-wrapper" ' . $mediaconsult_background . '>';
 
@@ -54,10 +55,12 @@ if( !function_exists( 'mediaconsult_service_highlight_rework' ) ) {
 
 
           $output .= '<div class="serh-content">' . do_shortcode( $content ) . '</div>';
-
-        $output .= '</div>';
+	
+	$output .= '</a>';
+     
+     $output .= '</div>';
     
-    $output .= '</a>';
+    
 		
 		
 		return $output;
