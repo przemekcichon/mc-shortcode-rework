@@ -52,11 +52,10 @@ if( !function_exists( 'mediaconsult_service_highlight_rework' ) ) {
             }
 
           $output .= '</div>';
-
-
-          $output .= '<div class="serh-content">' . do_shortcode( $content ) . '</div>';
 	
 	$output .= '</a>';
+		
+        $output .= '<div class="serh-content">' . do_shortcode( $content ) . '</div>';
      
      $output .= '</div>';
     
